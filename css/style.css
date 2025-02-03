@@ -1,0 +1,129 @@
+/* 폰트 */
+@import url('https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css');
+@font-face {
+  font-family: 'Gyeonggi_Title_Medium';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2410-3@1.0/Title_Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'TheJamsil5Bold';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2302_01@1.0/TheJamsil5Bold.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'GowunDodum-Regular';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/GowunDodum-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* CSS초기화 */
+* {margin: 0; padding: 0; font-family: TheJamsil5Bold; box-sizing: border-box;}
+
+html {font-size: 15px;}
+
+
+
+/* 네비게이션 바 */
+#navbar01 {
+  position: fixed;
+  font-family: NanumSquare; font-weight: bold;
+  margin-bottom: 0;
+  border: 0;
+  font-size: 1.35rem !important;
+  letter-spacing: 2.77px;
+  opacity: 0.85;
+}
+.nav-item { margin-left: 25px; margin-right: 25px;} 
+
+#main { width: 100%; height: 768px; 
+  background-image: url("/img/Pic0001.jpg");    
+  background-size: cover;
+  position: relative; }
+
+#main h1 { position: absolute; top:250px; color: white; font-weight: 300; font-size: 2.34rem;}
+#main h1 div:nth-child(1) { font-size: 3.7rem; font-weight: 900;}
+#main h1 div:nth-child(2) { font-size: 1.15rem; margin-top: 20px; font-family: GowunDodum-Regular; font-weight: 600; }
+#main h1 .btn {
+  background-color: black; color: white; padding-left: 50px; padding-right: 50px; border-radius: 4px; margin-top: 30px;
+  font-size: 1.35rem; font-weight: bold;
+}
+
+/* 배달 파트너 */
+#partner { margin-top: 70px;}
+#partner img {width: 100%;}
+#partner h3 {margin-top: 30px;}
+#partner .col-sm-4 { line-height: 25px;}
+#partner .col-sm-4 div { font-family: GowunDodum-Regular; font-weight: 600; color: rgb(92, 89, 89);}
+
+/* 무료배달 박스 */
+#deliveryfull {margin-top: 70px; padding-top: 100px; background-color: #F9FAFB;}
+#delivery img { width: 100%; }
+#delivery .col-sm-6 { padding-top: 15px; }
+#delivery .row { display: block !important; margin-bottom: 30px; overflow: hidden;}
+#delivery h1 {margin-bottom: 20px;}
+#delivery h1 span, #delivery h3 {color: rgb(49, 211, 252);}
+#delivery .smallgray { color: rgb(104, 104, 104); font-size: 1.1rem; font-family: GowunDodum-Regular; font-weight: 600; }
+#delivery h2 {font-size: 3rem;}
+#delivery .col01,#delivery .col03,#delivery .col05 { padding: 50px 0px 0px 70px;}
+.col01, .col02 { float: right; }
+.col03, .col04 { float: left; }
+.col05, .col06 { float: right; }
+
+/* 서브메뉴 */
+#submenu { width: 100%; height: 681px; display: flex !important; clear: both; 
+  background-image: url("/img/Pic0003.jpg");    
+  background-size: cover;
+  position: relative; }
+#submenu .container { padding: 80px 0px 0px 60px;}
+#submenu h1 {font-size: 3.7rem;} 
+#submenu a {font-size: 1.2rem; color: rgb(41, 161, 77); text-decoration: none;}
+
+  /* 쿠팡이츠의 새로운 시도 */
+
+#tryfull {margin-top: 70px; padding-top: 100px; background-color: #F9FAFB;}
+#try video { width: 100%; }
+#try .row { display: block !important; margin-bottom: 30px; overflow: hidden; }
+#try .col-sm-6 { padding-top: 15px; }
+#try h1 {margin-bottom: 20px;}
+#try h1 span, #try h3 {color: rgb(49, 211, 252);}
+#try .smallgray { color: rgb(104, 104, 104); font-size: 1.1rem; font-family: GowunDodum-Regular; font-weight: 600; }
+#try h2 {font-size: 3rem;}
+#try .col01,#try .col03,#try .col05 { padding: 50px 0px 0px 70px;}
+
+/* 슬라이더 */
+#slider span {color: rgb(49, 211, 252);}
+#slider h1 { margin-bottom: 60px;}
+#slider { margin-bottom: 60px;}
+
+/* footer */
+footer { background-color: #F2F2F2; position: relative; }
+#footer .row .col-sm-2 { margin: 35px 0px 10px 0px; font-size: 1rem;}
+#footer .row .col-sm-3 { margin: 35px 0px 10px 0px; font-size: 1rem;}
+#bwlogo { position:absolute; width: 155px; height: auto; top: -6px;}
+
+/* 숨겨진 항목 */
+.span02,.span03,.span04,.span05,#hiddenlogo { display: none; }
+
+  /* 미디어 쿼리 (너비<768) */
+@media screen and (max-width:575px) { 
+  html { font-size: 10px;} 
+  #main { background-image: url("/img/Pic0002.jpg");} 
+  #main h1 { top: 130px;}
+  #partner { padding: 0px 50px;}
+  #partner h3 {margin-top: 5px;}
+  #partner .col-sm-4 { line-height: 12px; padding-top: 45px;}
+  #submenu { background-image: url("/img/pic0004.jpg");} 
+  #slider { padding-top: 50px;  padding-bottom: 50px;}
+  #footer .row .col-sm-2 { margin: 12px 0px 5px 0px; font-size: 2rem;}
+  #footer .row .col-sm-3 { margin: 12px 0px 5px 0px; font-size: 2rem;}
+  #footer #insta { width: 40px; margin-top: 20px;}
+  .span01 { display: none; }
+  .span02,.span03,.span04,.span05,#hiddenlogo { display: flex; }
+  #footer div[class*=span] { font-size: 1.5rem; font-family: GowunDodum-Regular; font-weight: 700;}
+  /* 네비게이션 바 (모바일)  */
+  .nav-item a { border-bottom: 2px solid gray;}
+  .btn-primary { width: 130px; border: none !important; margin-top: 10px; }
+}
