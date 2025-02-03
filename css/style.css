@@ -39,7 +39,7 @@ html {font-size: 15px;}
 .nav-item { margin-left: 25px; margin-right: 25px;} 
 
 #main { width: 100%; height: 768px; 
-  background-image: url("/img/Pic0001.jpg");    
+  background-image: url("../img/Pic0001.jpg");    
   background-size: cover;
   position: relative; }
 
@@ -74,7 +74,7 @@ html {font-size: 15px;}
 
 /* 서브메뉴 */
 #submenu { width: 100%; height: 681px; display: flex !important; clear: both; 
-  background-image: url("/img/Pic0003.jpg");    
+  background-image: url("../img/Pic0003.jpg");    
   background-size: cover;
   position: relative; }
 #submenu .container { padding: 80px 0px 0px 60px;}
@@ -110,12 +110,12 @@ footer { background-color: #F2F2F2; position: relative; }
   /* 미디어 쿼리 (너비<768) */
 @media screen and (max-width:575px) { 
   html { font-size: 10px;} 
-  #main { background-image: url("/img/Pic0002.jpg");} 
+  #main { background-image: url("../img/Pic0002.jpg");} 
   #main h1 { top: 130px;}
   #partner { padding: 0px 50px;}
   #partner h3 {margin-top: 5px;}
   #partner .col-sm-4 { line-height: 12px; padding-top: 45px;}
-  #submenu { background-image: url("/img/pic0004.jpg");} 
+  #submenu { background-image: url("../img/pic0004.jpg");} 
   #slider { padding-top: 50px;  padding-bottom: 50px;}
   #footer .row .col-sm-2 { margin: 12px 0px 5px 0px; font-size: 2rem;}
   #footer .row .col-sm-3 { margin: 12px 0px 5px 0px; font-size: 2rem;}
